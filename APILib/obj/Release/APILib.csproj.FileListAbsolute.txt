@@ -1,0 +1,5 @@
+D:\VS2008\RSimpleLibrary\APILib\bin\Release\APILib.dll
+D:\VS2008\RSimpleLibrary\APILib\bin\Release\APILib.pdb
+D:\VS2008\RSimpleLibrary\APILib\obj\Release\ResolveAssemblyReference.cache
+D:\VS2008\RSimpleLibrary\APILib\obj\Release\APILib.dll
+D:\VS2008\RSimpleLibrary\APILib\obj\Release\APILib.pdb

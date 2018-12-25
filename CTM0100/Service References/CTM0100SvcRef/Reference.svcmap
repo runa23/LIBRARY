@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="842db8f0-e01e-4338-a440-e9529ed6f230" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2291/TestBackEnd/CTM0100Svc.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CTM0100Svc.xsd" MetadataType="Schema" ID="160f9afc-54ea-474f-8b4c-6d2fbc2f4f50" SourceId="1" SourceUrl="http://localhost:2291/TestBackEnd/CTM0100Svc.svc?xsd=xsd4" />
+    <MetadataFile FileName="CTM0100Svc.wsdl" MetadataType="Wsdl" ID="454ac046-9a29-4c54-8bb6-958a521a5cd4" SourceId="1" SourceUrl="http://localhost:2291/TestBackEnd/CTM0100Svc.svc?wsdl" />
+    <MetadataFile FileName="CTM0100Svc1.xsd" MetadataType="Schema" ID="8d8db960-dde5-457d-b805-7665d05b7508" SourceId="1" SourceUrl="http://localhost:2291/TestBackEnd/CTM0100Svc.svc?xsd=xsd1" />
+    <MetadataFile FileName="CTM0100Svc2.xsd" MetadataType="Schema" ID="529fd07d-a37e-4c9b-9a9e-c8034f073b1d" SourceId="1" SourceUrl="http://localhost:2291/TestBackEnd/CTM0100Svc.svc?xsd=xsd0" />
+    <MetadataFile FileName="CTM0100Svc3.xsd" MetadataType="Schema" ID="da108b9f-91be-4157-9f71-def46a981d0a" SourceId="1" SourceUrl="http://localhost:2291/TestBackEnd/CTM0100Svc.svc?xsd=xsd3" />
+    <MetadataFile FileName="CTM0100Svc4.xsd" MetadataType="Schema" ID="317ea821-08c7-49a1-bb35-c56d84cef6dd" SourceId="1" SourceUrl="http://localhost:2291/TestBackEnd/CTM0100Svc.svc?xsd=xsd2" />
+    <MetadataFile FileName="CTM0100Svc.disco" MetadataType="Disco" ID="45bf0c2b-0412-401c-8035-a8b9f0342de9" SourceId="1" SourceUrl="http://localhost:2291/TestBackEnd/CTM0100Svc.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

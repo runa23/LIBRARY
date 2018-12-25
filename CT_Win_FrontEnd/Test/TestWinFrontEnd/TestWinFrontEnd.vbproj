@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82567732-8E43-4023-8107-C77F363BF645}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TestWinFrontEnd.My.MyApplication</StartupObject>
+    <RootNamespace>TestWinFrontEnd</RootNamespace>
+    <AssemblyName>TestWinFrontEnd</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TestWinFrontEnd.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TestWinFrontEnd.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseClass\T_Enable.Designer.vb">
+      <DependentUpon>T_Enable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\T_Enable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataControl\DataBinding.Designer.vb">
+      <DependentUpon>DataBinding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\DataBinding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataControl\GridSearch.Designer.vb">
+      <DependentUpon>GridSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\GridSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\dtoCustomer.vb" />
+    <Compile Include="DTO\lkCustomer.vb" />
+    <Compile Include="DTO\lkGridSearch.vb" />
+    <Compile Include="Form\DetailForm\ChildForm.Designer.vb">
+      <DependentUpon>ChildForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DetailForm\ChildForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DetailForm\ParentForm.Designer.vb">
+      <DependentUpon>ParentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DetailForm\ParentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ErrorForm.Designer.vb">
+      <DependentUpon>ErrorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ErrorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FindForm.Designer.vb">
+      <DependentUpon>FindForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FindForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LookUpButtonForm.Designer.vb">
+      <DependentUpon>LookUpButtonForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LookUpButtonForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LookUpCustomerForm.Designer.vb">
+      <DependentUpon>LookUpCustomerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LookUpCustomerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\Encryption.Designer.vb">
+      <DependentUpon>Encryption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Encryption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\GlobalVar.Designer.vb">
+      <DependentUpon>GlobalVar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\GlobalVar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\SexLookUp.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service\CustomerService.vb" />
+    <Compile Include="Service\GridSearchService.vb" />
+    <Compile Include="test\Child1.Designer.vb">
+      <DependentUpon>Child1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test\Child1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\Child2.Designer.vb">
+      <DependentUpon>Child2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test\Child2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\Owner.Designer.vb">
+      <DependentUpon>Owner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test\Owner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\Reflection.Designer.vb">
+      <DependentUpon>Reflection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test\Reflection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseClass\T_Enable.resx">
+      <DependentUpon>T_Enable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControl\DataBinding.resx">
+      <DependentUpon>DataBinding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataControl\GridSearch.resx">
+      <DependentUpon>GridSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DetailForm\ChildForm.resx">
+      <DependentUpon>ChildForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DetailForm\ParentForm.resx">
+      <DependentUpon>ParentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ErrorForm.resx">
+      <DependentUpon>ErrorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FindForm.resx">
+      <DependentUpon>FindForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LookUpButtonForm.resx">
+      <DependentUpon>LookUpButtonForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LookUpCustomerForm.resx">
+      <DependentUpon>LookUpCustomerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper\Encryption.resx">
+      <DependentUpon>Encryption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper\GlobalVar.resx">
+      <DependentUpon>GlobalVar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\Child1.resx">
+      <DependentUpon>Child1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\Owner.resx">
+      <DependentUpon>Owner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\Reflection.resx">
+      <DependentUpon>Reflection.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\dtoCustomer.datasource" />
+    <None Include="My Project\DataSources\lkCustomer.datasource" />
+    <None Include="My Project\DataSources\lkGridSearch.datasource" />
+    <None Include="My Project\DataSources\SexLookUp.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\R_Common\R_Common.vbproj">
+      <Project>{5E0010F0-736A-41AD-8D52-E3676FDB2EC7}</Project>
+      <Name>R_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\R_Win_FrontEnd.vbproj">
+      <Project>{56FCFEFF-64C2-4A67-AE8F-070A15961D83}</Project>
+      <Name>R_Win_FrontEnd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/R_Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/R_Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="R_ServiceExceptions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Exceptions" nillable="true" type="tns:ArrayOfR_Error" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="R_ServiceExceptions" nillable="true" type="tns:R_ServiceExceptions" />
+  <xs:complexType name="ArrayOfR_Error">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="R_Error" nillable="true" type="tns:R_Error" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfR_Error" nillable="true" type="tns:ArrayOfR_Error" />
+  <xs:complexType name="R_Error">
+    <xs:sequence>
+      <xs:element name="lcErrDescp" nillable="true" type="xs:string" />
+      <xs:element name="lcErrNo" nillable="true" type="xs:string" />
+      <xs:element name="llHasErrorDetail" type="xs:boolean" />
+      <xs:element name="loErrorDetails" nillable="true" type="tns:ArrayOfR_ErrorDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="R_Error" nillable="true" type="tns:R_Error" />
+  <xs:complexType name="ArrayOfR_ErrorDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="R_ErrorDetail" nillable="true" type="tns:R_ErrorDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfR_ErrorDetail" nillable="true" type="tns:ArrayOfR_ErrorDetail" />
+  <xs:complexType name="R_ErrorDetail">
+    <xs:sequence>
+      <xs:element name="lcErrDescp" nillable="true" type="xs:string" />
+      <xs:element name="lcErrNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="R_ErrorDetail" nillable="true" type="tns:R_ErrorDetail" />
+</xs:schema>

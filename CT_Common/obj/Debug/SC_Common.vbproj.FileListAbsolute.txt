@@ -1,0 +1,6 @@
+G:\Company Project\LIBRARY\CT_Common\bin\Debug\SC_Common.dll
+G:\Company Project\LIBRARY\CT_Common\bin\Debug\SC_Common.pdb
+G:\Company Project\LIBRARY\CT_Common\obj\Debug\SC_Common.Resources.resources
+G:\Company Project\LIBRARY\CT_Common\obj\Debug\SC_Common.vbproj.GenerateResource.Cache
+G:\Company Project\LIBRARY\CT_Common\obj\Debug\SC_Common.dll
+G:\Company Project\LIBRARY\CT_Common\obj\Debug\SC_Common.pdb

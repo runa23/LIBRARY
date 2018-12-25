@@ -1,0 +1,20 @@
+D:\VS2008\RSimpleLibrary\R_BackEnd\bin\Debug\R_BackEnd.dll.config
+D:\VS2008\RSimpleLibrary\R_BackEnd\bin\Debug\R_BackEnd.dll
+D:\VS2008\RSimpleLibrary\R_BackEnd\bin\Debug\R_BackEnd.pdb
+D:\VS2008\RSimpleLibrary\R_BackEnd\bin\Debug\R_Common.dll
+D:\VS2008\RSimpleLibrary\R_BackEnd\bin\Debug\R_Common.pdb
+D:\VS2008\RSimpleLibrary\R_BackEnd\obj\Debug\ResolveAssemblyReference.cache
+D:\VS2008\RSimpleLibrary\R_BackEnd\obj\Debug\R_BackEnd.Resources.resources
+D:\VS2008\RSimpleLibrary\R_BackEnd\obj\Debug\R_BackEnd.vbproj.GenerateResource.Cache
+D:\VS2008\RSimpleLibrary\R_BackEnd\obj\Debug\R_BackEnd.dll
+D:\VS2008\RSimpleLibrary\R_BackEnd\obj\Debug\R_BackEnd.pdb
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\bin\Debug\R_BackEnd.dll.config
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\bin\Debug\R_BackEnd.dll
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\bin\Debug\R_BackEnd.pdb
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\bin\Debug\R_Common.dll
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\bin\Debug\R_Common.pdb
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\obj\Debug\ResolveAssemblyReference.cache
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\obj\Debug\R_BackEnd.Resources.resources
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\obj\Debug\R_BackEnd.vbproj.GenerateResource.Cache
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\obj\Debug\R_BackEnd.dll
+D:\yohanes\source codes\RSimpleLibrary\R_BackEnd\obj\Debug\R_BackEnd.pdb

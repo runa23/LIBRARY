@@ -1,0 +1,15 @@
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\obj\Release\ResolveAssemblyReference.cache
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\obj\Release\TestRSimpleLibrary.Resources.resources
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\obj\Release\TestRSimpleLibrary.T_R_Db.resources
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\obj\Release\TestRSimpleLibrary.T_R_exception.resources
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\obj\Release\TestRSimpleLibrary.vbproj.GenerateResource.Cache
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\bin\Release\TestRSimpleLibrary.exe.config
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\bin\Release\TestRSimpleLibrary.exe
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\bin\Release\TestRSimpleLibrary.pdb
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\bin\Release\TestRSimpleLibrary.xml
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\bin\Release\R_BackEnd.dll
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\bin\Release\R_Common.dll
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\obj\Release\TestRSimpleLibrary.TestImageConvertion.resources
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\obj\Release\TestRSimpleLibrary.exe
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\obj\Release\TestRSimpleLibrary.xml
+D:\VS2008\RSimpleLibrary\Test\TestRSimpleLibrary\obj\Release\TestRSimpleLibrary.pdb

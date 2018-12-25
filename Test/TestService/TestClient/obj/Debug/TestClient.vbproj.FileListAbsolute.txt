@@ -1,0 +1,12 @@
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\bin\Debug\TestClient.exe.config
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\bin\Debug\TestClient.exe
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\bin\Debug\TestClient.pdb
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\bin\Debug\TestClient.xml
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\bin\Debug\R_Common.dll
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\obj\Debug\ResolveAssemblyReference.cache
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\obj\Debug\TestClient.Form1.resources
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\obj\Debug\TestClient.Resources.resources
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\obj\Debug\TestClient.vbproj.GenerateResource.Cache
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\obj\Debug\TestClient.exe
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\obj\Debug\TestClient.xml
+D:\VS2008\RSimpleLibrary\Test\TestService\TestClient\obj\Debug\TestClient.pdb

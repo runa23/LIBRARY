@@ -1,0 +1,5 @@
+D:\VS2008\RSimpleLibrary\HelperLibrary\bin\Release\HelperLibrary.dll
+D:\VS2008\RSimpleLibrary\HelperLibrary\bin\Release\HelperLibrary.pdb
+D:\VS2008\RSimpleLibrary\HelperLibrary\obj\Release\ResolveAssemblyReference.cache
+D:\VS2008\RSimpleLibrary\HelperLibrary\obj\Release\HelperLibrary.dll
+D:\VS2008\RSimpleLibrary\HelperLibrary\obj\Release\HelperLibrary.pdb

@@ -1,0 +1,3 @@
+D:\projects\test\CT\CTLibrary\CT_Common\obj\x86\Release\ResolveAssemblyReference.cache
+D:\projects\test\CT\CTLibrary\CT_Common\obj\x86\Release\CT_Common.Resources.resources
+D:\projects\test\CT\CTLibrary\CT_Common\obj\x86\Release\CT_Common.vbproj.GenerateResource.Cache

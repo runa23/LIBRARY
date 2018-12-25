@@ -1,0 +1,7 @@
+D:\VS2008\RSimpleLibrary\R_BackEnd\bin\Release\R_BackEnd.dll.config
+D:\VS2008\RSimpleLibrary\R_BackEnd\bin\Release\R_BackEnd.dll
+D:\VS2008\RSimpleLibrary\R_BackEnd\bin\Release\R_Common.dll
+D:\VS2008\RSimpleLibrary\R_BackEnd\obj\Release\ResolveAssemblyReference.cache
+D:\VS2008\RSimpleLibrary\R_BackEnd\obj\Release\R_BackEnd.Resources.resources
+D:\VS2008\RSimpleLibrary\R_BackEnd\obj\Release\R_BackEnd.vbproj.GenerateResource.Cache
+D:\VS2008\RSimpleLibrary\R_BackEnd\obj\Release\R_BackEnd.dll

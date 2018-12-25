@@ -1,0 +1,12 @@
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\bin\Debug\SC_Win_FrontEnd.dll
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\bin\Debug\SC_Win_FrontEnd.pdb
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\bin\Debug\SC_Common.dll
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\bin\Debug\SC_Common.pdb
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.vbprojResolveAssemblyReference.cache
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.SC_GridSearch.resources
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.SC_ErrorForm.resources
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.SC_ReturnLookUpAndFind.resources
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.Resources.resources
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.vbproj.GenerateResource.Cache
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.dll
+G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.pdb

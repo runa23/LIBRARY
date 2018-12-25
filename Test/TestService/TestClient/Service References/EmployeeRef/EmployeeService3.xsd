@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/R_BackEnd" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/R_BackEnd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="R_DTOBase">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="R_DTOBase" nillable="true" type="tns:R_DTOBase" />
+  <xs:simpleType name="eCRUDMode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NormalMode" />
+      <xs:enumeration value="AddMode" />
+      <xs:enumeration value="EditMode" />
+      <xs:enumeration value="DeleteMode" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eCRUDMode" nillable="true" type="tns:eCRUDMode" />
+</xs:schema>

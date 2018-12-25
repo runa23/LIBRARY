@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56FCFEFF-64C2-4A67-AE8F-070A15961D83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SC_Win_FrontEnd</RootNamespace>
+    <AssemblyName>SC_Win_FrontEnd</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugSymbols>false</DebugSymbols>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.CompilerServices" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseClass\SC_Button.Designer.vb">
+      <DependentUpon>SC_Button.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_Button.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_CheckBox.Designer.vb">
+      <DependentUpon>SC_CheckBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_CheckBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_CheckListBox.Designer.vb">
+      <DependentUpon>SC_CheckListBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_CheckListBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_ComboBox.Designer.vb">
+      <DependentUpon>SC_ComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_ComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_DataGridView.Designer.vb">
+      <DependentUpon>SC_DataGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_DataGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_DateTimePicker.Designer.vb">
+      <DependentUpon>SC_DateTimePicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_DateTimePicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_DomainUpDown.Designer.vb">
+      <DependentUpon>SC_DomainUpDown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_DomainUpDown.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_ErrorProvider.Designer.vb">
+      <DependentUpon>SC_ErrorProvider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_ErrorProvider.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_ListBox.Designer.vb">
+      <DependentUpon>SC_ListBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_ListBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_MaskedTextBox.Designer.vb">
+      <DependentUpon>SC_MaskedTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_MaskedTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_MonthCalendar.Designer.vb">
+      <DependentUpon>SC_MonthCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_MonthCalendar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_NumericUpDown.Designer.vb">
+      <DependentUpon>SC_NumericUpDown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_NumericUpDown.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_RadioButton.Designer.vb">
+      <DependentUpon>SC_RadioButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_RadioButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_TabControl.Designer.vb">
+      <DependentUpon>SC_TabControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_TabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_TextBox.Designer.vb">
+      <DependentUpon>SC_TextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_TextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_TrackBar.Designer.vb">
+      <DependentUpon>SC_TrackBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_TrackBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseClass\SC_TreeView.Designer.vb">
+      <DependentUpon>SC_TreeView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClass\SC_TreeView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_Refresh.Designer.vb">
+      <DependentUpon>SC_Refresh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_Refresh.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_Add.Designer.vb">
+      <DependentUpon>SC_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_Add.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_Cancel.Designer.vb">
+      <DependentUpon>SC_Cancel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_Cancel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_Conductor.Designer.vb">
+      <DependentUpon>SC_Conductor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_Conductor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_Delete.Designer.vb">
+      <DependentUpon>SC_Delete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_Delete.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_Edit.Designer.vb">
+      <DependentUpon>SC_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_Edit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_ExportCSV.Designer.vb">
+      <DependentUpon>SC_ExportCSV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_ExportCSV.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\SC_ErrorForm.designer.vb">
+      <DependentUpon>SC_ErrorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SC_ErrorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SC_Find.Designer.vb">
+      <DependentUpon>SC_Find.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SC_Find.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_GridSearch.Designer.vb">
+      <DependentUpon>SC_GridSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_GridSearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_Save.Designer.vb">
+      <DependentUpon>SC_Save.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_Save.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataControl\SC_UpdSavBase.Designer.vb">
+      <DependentUpon>SC_UpdSavBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataControl\SC_UpdSavBase.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\SC_Detail.Designer.vb">
+      <DependentUpon>SC_Detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SC_Detail.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\SC_IFormBase.vb" />
+    <Compile Include="Form\SC_FormBase.Designer.vb">
+      <DependentUpon>SC_FormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SC_FormBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SC_ILookUpAndFindButton.vb" />
+    <Compile Include="Form\SC_LookUp.Designer.vb">
+      <DependentUpon>SC_LookUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SC_LookUp.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\SC_ReturnLookUpAndFind.Designer.vb">
+      <DependentUpon>SC_ReturnLookUpAndFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SC_ReturnLookUpAndFind.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helper\FormHelper.vb" />
+    <Compile Include="Helper\SC_BindingListView.vb" />
+    <Compile Include="Helper\SC_GlobalVar.vb" />
+    <Compile Include="Helper\SC_StringConverter.vb" />
+    <Compile Include="Helper\SortComparer.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataControl\SC_GridSearch.resx">
+      <DependentUpon>SC_GridSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SC_ErrorForm.resx">
+      <DependentUpon>SC_ErrorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SC_ReturnLookUpAndFind.resx">
+      <DependentUpon>SC_ReturnLookUpAndFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\R_Common.R_Error.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\add.gif" />
+    <EmbeddedResource Include="Images\cancel.gif" />
+    <EmbeddedResource Include="Images\delete.gif" />
+    <EmbeddedResource Include="Images\edit.gif" />
+    <EmbeddedResource Include="Images\find.gif" />
+    <EmbeddedResource Include="Images\SaveAndDone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\detail.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CT_Common\SC_Common.vbproj">
+      <Project>{5E0010F0-736A-41AD-8D52-E3676FDB2EC7}</Project>
+      <Name>SC_Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\exportCSV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

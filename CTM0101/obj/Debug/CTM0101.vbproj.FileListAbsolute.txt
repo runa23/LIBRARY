@@ -1,0 +1,29 @@
+D:\projects\test\CT\CTLibrary\CTM0101\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\test\CT\CTLibrary\CTM0101\obj\Debug\CTM0101.CTM0101.resources
+D:\projects\test\CT\CTLibrary\CTM0101\obj\Debug\CTM0101.Resources.resources
+D:\projects\test\CT\CTLibrary\CTM0101\obj\Debug\CTM0101.vbproj.GenerateResource.Cache
+D:\projects\test\CT\CTLibrary\CTM0101\bin\Debug\CTM0101.pdb
+D:\projects\test\CT\CTLibrary\CTM0101\bin\Debug\CTM0101.xml
+D:\projects\test\CT\CTLibrary\CTM0101\bin\Debug\CT_Common.dll
+D:\projects\test\CT\CTLibrary\CTM0101\bin\Debug\CT_Win_FrontEnd.dll
+D:\projects\test\CT\CTLibrary\CTM0101\bin\Debug\CT_Win_FrontEnd.pdb
+D:\projects\test\CT\CTLibrary\CTM0101\bin\Debug\CT_Common.pdb
+D:\projects\test\CT\CTLibrary\CTM0101\obj\Debug\CTM0101.xml
+D:\projects\test\CT\CTLibrary\CTM0101\obj\Debug\CTM0101.pdb
+D:\projects\test\CT\CTLibrary\CTM0101\bin\Debug\CTM0101.dll
+D:\projects\test\CT\CTLibrary\CTM0101\obj\Debug\CTM0101.dll
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\bin\Debug\CTM0101.dll
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\bin\Debug\CTM0101.pdb
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\bin\Debug\CTM0101.xml
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\bin\Debug\CT_Common.dll
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\bin\Debug\CT_Win_FrontEnd.dll
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\bin\Debug\CT_Common.pdb
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\bin\Debug\CT_Win_FrontEnd.pdb
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\obj\Debug\CTM0101.CTM0101.resources
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\obj\Debug\CTM0101.Resources.resources
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\obj\Debug\CTM0101.dll
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\obj\Debug\CTM0101.xml
+D:\Project\CTAgro\Source Code\CT Library\CTLibrary\CTM0101\obj\Debug\CTM0101.pdb

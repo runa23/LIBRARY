@@ -1,0 +1,15 @@
+D:\VS2008\RSimpleLibrary\TestBusObject\bin\Debug\TestBusObject.dll
+D:\VS2008\RSimpleLibrary\TestBusObject\bin\Debug\TestBusObject.pdb
+D:\VS2008\RSimpleLibrary\TestBusObject\bin\Debug\TestBusObject.xml
+D:\VS2008\RSimpleLibrary\TestBusObject\obj\Debug\ResolveAssemblyReference.cache
+D:\VS2008\RSimpleLibrary\TestBusObject\obj\Debug\TestBusObject.Resources.resources
+D:\VS2008\RSimpleLibrary\TestBusObject\obj\Debug\TestBusObject.vbproj.GenerateResource.Cache
+D:\VS2008\RSimpleLibrary\TestBusObject\obj\Debug\TestBusObject.dll
+D:\VS2008\RSimpleLibrary\TestBusObject\obj\Debug\TestBusObject.xml
+D:\VS2008\RSimpleLibrary\TestBusObject\obj\Debug\TestBusObject.pdb
+D:\VS2008\RSimpleLibrary\TestBusObject\bin\Debug\R_BackEnd.dll
+D:\VS2008\RSimpleLibrary\TestBusObject\bin\Debug\R_Common.dll
+D:\VS2008\RSimpleLibrary\TestBusObject\bin\Debug\R_BackEnd.pdb
+D:\VS2008\RSimpleLibrary\TestBusObject\bin\Debug\R_BackEnd.xml
+D:\VS2008\RSimpleLibrary\TestBusObject\bin\Debug\R_Common.pdb
+D:\VS2008\RSimpleLibrary\TestBusObject\bin\Debug\R_Common.xml

@@ -1,0 +1,5 @@
+D:\VS2008\RSimpleLibrary\R_Common\bin\Release\R_Common.dll
+D:\VS2008\RSimpleLibrary\R_Common\obj\Release\ResolveAssemblyReference.cache
+D:\VS2008\RSimpleLibrary\R_Common\obj\Release\R_Common.Resources.resources
+D:\VS2008\RSimpleLibrary\R_Common\obj\Release\R_Common.vbproj.GenerateResource.Cache
+D:\VS2008\RSimpleLibrary\R_Common\obj\Release\R_Common.dll

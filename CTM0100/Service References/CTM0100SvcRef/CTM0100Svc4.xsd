@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2291/TestBackEnd/CTM0100Svc.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CT_BackEnd" />
+  <xs:complexType name="m_karyawan01DTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/CT_BackEnd" base="q1:CT_DTOBase">
+        <xs:sequence>
+          <xs:element name="CREA_BY" nillable="true" type="xs:string" />
+          <xs:element name="CREA_DATE" type="xs:dateTime" />
+          <xs:element name="FOTO" nillable="true" type="xs:base64Binary" />
+          <xs:element name="GAPOK" type="xs:decimal" />
+          <xs:element name="JABATAN" nillable="true" type="xs:string" />
+          <xs:element name="JENIS_KELAMIN" nillable="true" type="xs:string" />
+          <xs:element name="JUM_ANAK" type="xs:int" />
+          <xs:element name="KODE_PENDIDIKAN" nillable="true" type="xs:string" />
+          <xs:element name="NAMA" nillable="true" type="xs:string" />
+          <xs:element name="NIK" nillable="true" type="xs:string" />
+          <xs:element name="TGL_LAHIR" type="xs:dateTime" />
+          <xs:element name="TUN_TRANSPORT" type="xs:decimal" />
+          <xs:element name="UPD_BY" nillable="true" type="xs:string" />
+          <xs:element name="UPD_DATE" type="xs:dateTime" />
+          <xs:element name="WARGA_NEGARA" nillable="true" type="xs:string" />
+          <xs:element name="WARGA_NEGARA_ID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="m_karyawan01DTO" nillable="true" type="tns:m_karyawan01DTO" />
+  <xs:complexType name="ArrayOfm_karyawan02DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="m_karyawan02DTO" nillable="true" type="tns:m_karyawan02DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfm_karyawan02DTO" nillable="true" type="tns:ArrayOfm_karyawan02DTO" />
+  <xs:complexType name="m_karyawan02DTO">
+    <xs:sequence>
+      <xs:element name="CREA_BY" nillable="true" type="xs:string" />
+      <xs:element name="CREA_DATE" type="xs:dateTime" />
+      <xs:element name="FOTO" nillable="true" type="xs:base64Binary" />
+      <xs:element name="GAPOK" type="xs:decimal" />
+      <xs:element name="JABATAN" nillable="true" type="xs:string" />
+      <xs:element name="JENIS_KELAMIN" nillable="true" type="xs:string" />
+      <xs:element name="JUM_ANAK" type="xs:int" />
+      <xs:element name="NAMA" nillable="true" type="xs:string" />
+      <xs:element name="NIK" nillable="true" type="xs:string" />
+      <xs:element name="TGL_LAHIR" type="xs:dateTime" />
+      <xs:element name="TUN_TRANSPORT" type="xs:decimal" />
+      <xs:element name="UPD_BY" nillable="true" type="xs:string" />
+      <xs:element name="UPD_DATE" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="m_karyawan02DTO" nillable="true" type="tns:m_karyawan02DTO" />
+  <xs:complexType name="LKm_warga_negaraDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WARGA_NEGARA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WARGA_NEGARA_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LKm_warga_negaraDTO" nillable="true" type="tns:LKm_warga_negaraDTO" />
+  <xs:complexType name="ArrayOfLKm_warga_negaraDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LKm_warga_negaraDTO" nillable="true" type="tns:LKm_warga_negaraDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLKm_warga_negaraDTO" nillable="true" type="tns:ArrayOfLKm_warga_negaraDTO" />
+  <xs:complexType name="ArrayOfLKm_jabatanDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LKm_jabatanDTO" nillable="true" type="tns:LKm_jabatanDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLKm_jabatanDTO" nillable="true" type="tns:ArrayOfLKm_jabatanDTO" />
+  <xs:complexType name="LKm_jabatanDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="JABATAN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LKm_jabatanDTO" nillable="true" type="tns:LKm_jabatanDTO" />
+  <xs:complexType name="ArrayOfLKm_pendidikanDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LKm_pendidikanDTO" nillable="true" type="tns:LKm_pendidikanDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLKm_pendidikanDTO" nillable="true" type="tns:ArrayOfLKm_pendidikanDTO" />
+  <xs:complexType name="LKm_pendidikanDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KODE_PENDIDIKAN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PENDIDIKAN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LKm_pendidikanDTO" nillable="true" type="tns:LKm_pendidikanDTO" />
+  <xs:complexType name="ArrayOfRoleDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoleDTO" nillable="true" type="tns:RoleDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoleDTO" nillable="true" type="tns:ArrayOfRoleDTO" />
+  <xs:complexType name="RoleDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Add_Permit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="App_Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Delete_Permit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Edit_Permit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Read_Permit" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RoleDTO" nillable="true" type="tns:RoleDTO" />
+</xs:schema>

@@ -1,0 +1,25 @@
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\bin\Release\TestRNECHelper.exe
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\bin\Release\TestRNECHelper.pdb
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\bin\Release\TestRNECHelper.xml
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\bin\Release\NECSAP.SPID.dll
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\bin\Release\R_NECHelper.dll
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\obj\Release\ResolveAssemblyReference.cache
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.Form1.resources
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.Resources.resources
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.vbproj.GenerateResource.Cache
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.exe
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.xml
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.pdb
+D:\VS2008\RSimpleLibrary\Test\TestRNECHelper\bin\Release\R_NECHelper.pdb
+D:\yohanes\source codes\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.exe
+D:\yohanes\source codes\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.xml
+D:\yohanes\source codes\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.pdb
+D:\yohanes\paspamres\library\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.exe
+D:\yohanes\paspamres\library\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.xml
+D:\yohanes\paspamres\library\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.pdb
+D:\projects\paspamres\library\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.exe
+D:\projects\paspamres\library\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.xml
+D:\projects\paspamres\library\RSimpleLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.pdb
+D:\projects\test\CT\CTLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.exe
+D:\projects\test\CT\CTLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.xml
+D:\projects\test\CT\CTLibrary\Test\TestRNECHelper\obj\Release\TestRNECHelper.pdb

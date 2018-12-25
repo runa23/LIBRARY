@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0721b839-fda1-4a3f-9aa6-9e0bee57eba1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1099/TestBackEnd/CTM0100Svc.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CTM0100Svc.xsd" MetadataType="Schema" ID="5d60fa04-134d-41bf-b99f-a6c2ca7f8848" SourceId="1" SourceUrl="http://localhost:1099/TestBackEnd/CTM0100Svc.svc?xsd=xsd0" />
+    <MetadataFile FileName="CTM0100Svc.disco" MetadataType="Disco" ID="24314725-db04-4854-9e96-cb493686def0" SourceId="1" SourceUrl="http://localhost:1099/TestBackEnd/CTM0100Svc.svc?disco" />
+    <MetadataFile FileName="CTM0100Svc1.xsd" MetadataType="Schema" ID="14bb2594-aafd-4c80-90c7-b54ef79ddf77" SourceId="1" SourceUrl="http://localhost:1099/TestBackEnd/CTM0100Svc.svc?xsd=xsd2" />
+    <MetadataFile FileName="CTM0100Svc2.xsd" MetadataType="Schema" ID="9280ed21-a0f8-42e9-b2b5-8c5e7500a721" SourceId="1" SourceUrl="http://localhost:1099/TestBackEnd/CTM0100Svc.svc?xsd=xsd3" />
+    <MetadataFile FileName="CTM0100Svc.wsdl" MetadataType="Wsdl" ID="e13d2e69-447e-4b6f-b7ad-8cb65f3711a8" SourceId="1" SourceUrl="http://localhost:1099/TestBackEnd/CTM0100Svc.svc?wsdl" />
+    <MetadataFile FileName="CTM0100Svc3.xsd" MetadataType="Schema" ID="ce488094-4d03-4cb2-8b05-71d341d57ead" SourceId="1" SourceUrl="http://localhost:1099/TestBackEnd/CTM0100Svc.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
