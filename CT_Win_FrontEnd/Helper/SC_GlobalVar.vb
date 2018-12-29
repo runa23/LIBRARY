@@ -45,11 +45,6 @@
             Return _CompanyName
         End Get
     End Property
-    Public Shared ReadOnly Property CompanyOfficeMapId() As String
-        Get
-            Return _CompanyOfficeMapId
-        End Get
-    End Property
     Public Shared ReadOnly Property RoleAppList() As List(Of role_appDTO)
         Get
             Return _RoleAppList

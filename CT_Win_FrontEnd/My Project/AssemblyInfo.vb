@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("CT_Win_FrontEnd")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("CT Argo")> 
+<Assembly: AssemblyCompany("SIMARC")> 
 <Assembly: AssemblyProduct("CT_Win_FrontEnd")> 
-<Assembly: AssemblyCopyright("Copyright © CT Argo 2012")> 
+<Assembly: AssemblyCopyright("Copyright © SIMARC 2018")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

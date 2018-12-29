@@ -8,13 +8,3 @@ G:\Company Project\LIBRARY\CT_BackEnd\obj\Debug\SC_BackEnd.Resources.resources
 G:\Company Project\LIBRARY\CT_BackEnd\obj\Debug\SC_BackEnd.vbproj.GenerateResource.Cache
 G:\Company Project\LIBRARY\CT_BackEnd\obj\Debug\SC_BackEnd.dll
 G:\Company Project\LIBRARY\CT_BackEnd\obj\Debug\SC_BackEnd.pdb
-D:\MINE\Repo\LIBRARY\CT_BackEnd\bin\Debug\SC_BackEnd.dll.config
-D:\MINE\Repo\LIBRARY\CT_BackEnd\bin\Debug\SC_BackEnd.dll
-D:\MINE\Repo\LIBRARY\CT_BackEnd\bin\Debug\SC_BackEnd.pdb
-D:\MINE\Repo\LIBRARY\CT_BackEnd\bin\Debug\SC_Common.dll
-D:\MINE\Repo\LIBRARY\CT_BackEnd\bin\Debug\SC_Common.pdb
-D:\MINE\Repo\LIBRARY\CT_BackEnd\obj\Debug\SC_BackEnd.vbprojResolveAssemblyReference.cache
-D:\MINE\Repo\LIBRARY\CT_BackEnd\obj\Debug\SC_BackEnd.Resources.resources
-D:\MINE\Repo\LIBRARY\CT_BackEnd\obj\Debug\SC_BackEnd.vbproj.GenerateResource.Cache
-D:\MINE\Repo\LIBRARY\CT_BackEnd\obj\Debug\SC_BackEnd.dll
-D:\MINE\Repo\LIBRARY\CT_BackEnd\obj\Debug\SC_BackEnd.pdb

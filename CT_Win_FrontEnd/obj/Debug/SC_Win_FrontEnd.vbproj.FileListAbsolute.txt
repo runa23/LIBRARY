@@ -10,15 +10,3 @@ G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.Resources.r
 G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.vbproj.GenerateResource.Cache
 G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.dll
 G:\Company Project\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.pdb
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\bin\Debug\SC_Win_FrontEnd.dll
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\bin\Debug\SC_Win_FrontEnd.pdb
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\bin\Debug\SC_Common.dll
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\bin\Debug\SC_Common.pdb
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.vbprojResolveAssemblyReference.cache
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.SC_GridSearch.resources
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.SC_ErrorForm.resources
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.SC_ReturnLookUpAndFind.resources
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.Resources.resources
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.vbproj.GenerateResource.Cache
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.dll
-D:\MINE\Repo\LIBRARY\CT_Win_FrontEnd\obj\Debug\SC_Win_FrontEnd.pdb

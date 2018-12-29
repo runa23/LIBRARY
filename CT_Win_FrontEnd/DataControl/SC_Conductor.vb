@@ -34,7 +34,7 @@ Public Class SC_Conductor
     End Class
 
     '----- data ---------
-    Private CT_mode As e_Mode = e_Mode.None
+    Private SC_mode As e_Mode = e_Mode.None
     Private llRefreshFromParent As Boolean = False 'flag penanda refresh dari parent 
     Private _ProcessStatus As String
     Private _OldEntity As Object
@@ -53,10 +53,12 @@ Public Class SC_Conductor
 
 #Region " Variable EVENTS "
 
-    Public Event CT_ServiceRefreshList() ' Refresh tab list
+    Public Event SC_ServiceRefreshList() ' Refresh tab list
 
     Public Event SC_BeforeAdd()   ' Cek kondisi sebelum Add
     Public Event SC_AfterAdd(ByRef poEntity As Object)     ' untuk Merubah nilai saat didisplay
+    Public Event SC_BeforeCancel(ByRef poEntity As Object) 'Cek kondisi sebelum Cancel
+    Public Event SC_AfterCancel(ByRef poEntity As Object) 'Untuk merubah nilai saat dicancel
     Public Event SC_BeforeEdit(ByVal poEntity As Object) ' Cek kondisi sebelum Edit
     Public Event SC_AfterEdit(ByRef poEntity As Object)     ' untuk Merubah nilai saat didisplay edit
     Public Event SC_BeforeDelete(ByVal poEntity As Object) ' Cek kondisi sebelum Delete
@@ -77,14 +79,14 @@ Public Class SC_Conductor
 #Region "Property Mode"
     Public ReadOnly Property _Mode() As e_Mode
         Get
-            Return CT_mode
+            Return SC_mode
         End Get
     End Property
 #End Region
 
 #Region " PROPERTY BindingSource  "
-    <Category("CTAgro_Data_Binding")> _
-    Public Property CT_BindingSource() As BindingSource
+    <Category("SIMARC_Data_Binding")> _
+    Public Property SC_BindingSource() As BindingSource
         Get
             Return _BindingSource
         End Get
@@ -93,8 +95,8 @@ Public Class SC_Conductor
         End Set
     End Property
 
-    <Category("CTAgro_Data_Binding")> _
-    Public Property CT_ParentBindingSource() As BindingSource
+    <Category("SIMARC_Data_Binding")> _
+    Public Property SC_ParentBindingSource() As BindingSource
         Get
             Return _ParentBindingSource
         End Get
@@ -103,8 +105,8 @@ Public Class SC_Conductor
         End Set
     End Property
 
-    <Category("CTAgro_Data_Binding")> _
-    Public Property CT_ParentKey() As String
+    <Category("SIMARC_Data_Binding")> _
+    Public Property SC_ParentKey() As String
         Get
             Return _ParentKey
         End Get
@@ -186,7 +188,7 @@ Public Class SC_Conductor
 #Region " External M-E-T-H-O-D "
 
 #Region "Set Role"
-    Public Sub CT_SetRoleApp(ByVal poRoleApp As Object)
+    Public Sub SC_SetRoleApp(ByVal poRoleApp As Object)
         With Role_Permit
             .Add_Permit = poRoleApp.Add_Permit
             .Edit_Permit = poRoleApp.Edit_Permit
@@ -196,9 +198,9 @@ Public Class SC_Conductor
     End Sub
 #End Region
 
-#Region " Proses CT_GetEntity "
+#Region " Proses SC_GetEntity "
     'Dipanggil dari luar dan tombol find
-    Public Sub CT_GetEntity(ByVal poEntity As Object)
+    Public Sub SC_GetEntity(ByVal poEntity As Object)
         Me._GetEntityInternal(poEntity, True)
     End Sub
 
@@ -206,27 +208,28 @@ Public Class SC_Conductor
 
 #Region "Proses rebind Parent"
     'dipanggil dari luar sebelum datasource parent diubah
-    Public Sub CT_RebindParent()
+    Public Sub SC_RebindParent()
         llFirstDataSourceChange = True
         llLockParentBindingSource = True
-        CT_mode = e_Mode.None
+        SC_mode = e_Mode.None
         _BindingSource.Clear()
         'clone Current data untuk dikirim ke CT_Display
-        RaiseEvent SC_Display(CloneCurrentData(), CT_mode)
+        RaiseEvent SC_Display(CloneCurrentData(), SC_mode)
+        RaiseEvent SC_AfterCancel(CloneCurrentData)
     End Sub
 #End Region
 
 #Region " Proses INIT "
-    Public Sub CT_INIT()
-        CT_NotifyALL("init")
+    Public Sub SC_INIT()
+        SC_NotifyALL("init")
     End Sub
 #End Region
 #End Region
 
 #Region "Internal Method"
-#Region " CT_NotifyALL (status) "
+#Region " SC_NotifyALL (status) "
 
-    Private Sub CT_NotifyALL(ByVal Status As String)
+    Private Sub SC_NotifyALL(ByVal Status As String)
         Dim llHasData As Boolean
         '1. colUpdSav.NotifyStatus(Status,Jika Recount > 0 ) 
         '2. Jalankan Colection Child
@@ -247,37 +250,37 @@ Public Class SC_Conductor
         'Me.RsetCol_ChildMediator(status)
         Select Case LCase(Status)
             Case "init"
-                CT_mode = e_Mode.NormalMode
+                SC_mode = e_Mode.NormalMode
                 Me._SetCol_Add(False)
                 Me._SetCol_Other(True)
                 Me._SetCol_Hasdata(False)
             Case "add"
-                CT_mode = e_Mode.AddMode
+                SC_mode = e_Mode.AddMode
                 Me._SetCol_Add(True)
                 Me._SetCol_Other(False)
                 Me._SetCol_Hasdata(False)
             Case "edit"
-                CT_mode = e_Mode.EditMode
+                SC_mode = e_Mode.EditMode
                 Me._SetCol_Edit(True)
                 Me._SetCol_Other(False)
                 Me._SetCol_Hasdata(False)
             Case "remove"
-                CT_mode = e_Mode.NormalMode
+                SC_mode = e_Mode.NormalMode
                 Me._SetCol_Add(False)
                 Me._SetCol_Other(True)
                 Me._SetCol_Hasdata(llHasData)
             Case "save"
-                CT_mode = e_Mode.NormalMode
+                SC_mode = e_Mode.NormalMode
                 Me._SetCol_Add(False)
                 Me._SetCol_Other(True)
                 Me._SetCol_Hasdata(llHasData)
             Case "cancel"
-                CT_mode = e_Mode.NormalMode
+                SC_mode = e_Mode.NormalMode
                 Me._SetCol_Add(False)
                 Me._SetCol_Other(True)
                 Me._SetCol_Hasdata(llHasData)
             Case "normal"
-                CT_mode = e_Mode.NormalMode
+                SC_mode = e_Mode.NormalMode
                 Me._SetCol_Add(False)
                 Me._SetCol_Other(True)
                 Me._SetCol_Hasdata(llHasData)
@@ -320,7 +323,7 @@ Public Class SC_Conductor
 
             'clone Entity Result untuk dikirim ke CT_Display
             loTemporaryEntity = CloneObject(loCurrentEntity)
-            RaiseEvent SC_Display(loTemporaryEntity, CT_mode)
+            RaiseEvent SC_Display(loTemporaryEntity, SC_mode)
 
             If plwithValidation Then
                 'clone Entity Result untuk dikirim ke CT_EvaluateEntity
@@ -332,11 +335,11 @@ Public Class SC_Conductor
 
             SetCurrentData(loCurrentEntity)
 
-            CT_NotifyALL("normal")
+            SC_NotifyALL("normal")
         Catch ex As Exception
             loException.Add(ex)
             SetCurrentData(_OldEntity)
-            CT_NotifyALL(lcOldStatus)
+            SC_NotifyALL(lcOldStatus)
         End Try
         If loException.Haserror Then
             Me.DisplayException(loException)
@@ -358,8 +361,8 @@ Public Class SC_Conductor
     Private Sub _ParentBindingSource_CurrentChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles _ParentBindingSource.CurrentChanged
         llFirstDataSourceChange = False
         If llLockParentBindingSource = False Then
-            If CT_mode = e_Mode.None Then
-                Me.CT_INIT()
+            If SC_mode = e_Mode.None Then
+                Me.SC_INIT()
             End If
             If _ParentBindingSource.Count > 0 Then
                 _GetEntityInternal(_ParentBindingSource.Current, False)
@@ -419,8 +422,8 @@ Public Class SC_Conductor
     End Sub
 
     Private Sub _Form_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles _Form.Load
-        If CT_mode = e_Mode.None Then
-            Me.CT_INIT()
+        If SC_mode = e_Mode.None Then
+            Me.SC_INIT()
         End If
     End Sub
 #End Region
@@ -433,7 +436,7 @@ Public Class SC_Conductor
 
         Try
 
-            RaiseEvent CT_ServiceRefreshList()
+            RaiseEvent SC_ServiceRefreshList()
 
         Catch ex As Exception
             loException.Add(ex)
@@ -462,13 +465,13 @@ Public Class SC_Conductor
 
             RaiseEvent SC_BeforeAdd()
 
-            CT_NotifyALL("add")
+            SC_NotifyALL("add")
 
             _BindingSource.AddNew()
 
             'clone Current data untuk dikirim ke CT_Display
             loTemporaryEntity = CloneCurrentData()
-            RaiseEvent SC_Display(loTemporaryEntity, CT_mode)
+            RaiseEvent SC_Display(loTemporaryEntity, SC_mode)
 
             'dapatkan data untuk dikirim ke CT_AfterAdd
             loCurrentEntity = getCurrentData()
@@ -479,7 +482,7 @@ Public Class SC_Conductor
         Catch ex As Exception
             loException.Add(ex)
             SetCurrentData(_OldEntity)
-            CT_NotifyALL(lcOldStatus)
+            SC_NotifyALL(lcOldStatus)
         End Try
         If loException.Haserror Then
             Me.DisplayException(loException)
@@ -508,17 +511,17 @@ Public Class SC_Conductor
 
             RaiseEvent SC_BeforeEdit(loCurrentEntity)
 
-            CT_NotifyALL("edit")
+            SC_NotifyALL("edit")
 
             RaiseEvent SC_AfterEdit(loCurrentEntity)
 
             'clone Current data untuk dikirim ke CT_Display
             loTemporaryEntity = CloneCurrentData()
-            RaiseEvent SC_Display(loTemporaryEntity, CT_mode)
+            RaiseEvent SC_Display(loTemporaryEntity, SC_mode)
         Catch ex As Exception
             loException.Add(ex)
             SetCurrentData(_OldEntity)
-            CT_NotifyALL(lcOldStatus)
+            SC_NotifyALL(lcOldStatus)
         End Try
         If loException.Haserror Then
             Me.DisplayException(loException)
@@ -530,15 +533,35 @@ Public Class SC_Conductor
 
 #Region " Proses CANCEL "
     Public Sub _CANCEL()
+        Dim loException As New SC_Exception
+        Dim loCurrentEntity As Object
         Dim loTemporaryEntity As Object = Nothing
 
-        _BindingSource.CurrencyManager.CancelCurrentEdit()
-        SetCurrentData(_OldEntity)
-        CT_NotifyALL("cancel")
+        Try
+            _BindingSource.CurrencyManager.CancelCurrentEdit()
+            SetCurrentData(_OldEntity)
 
-        'clone Current data untuk dikirim ke CT_Display
-        loTemporaryEntity = CloneCurrentData()
-        RaiseEvent SC_Display(loTemporaryEntity, CT_mode)
+            loCurrentEntity = getCurrentData()
+
+            RaiseEvent SC_BeforeCancel(loCurrentEntity)
+
+            SC_NotifyALL("cancel")
+
+            RaiseEvent SC_AfterCancel(loCurrentEntity)
+            SetCurrentData(loCurrentEntity)
+
+            'clone Current data untuk dikirim ke CT_Display
+            loTemporaryEntity = CloneCurrentData()
+            RaiseEvent SC_Display(loTemporaryEntity, SC_mode)
+            
+        Catch ex As Exception
+            loException.Add(ex)
+            SetCurrentData(_OldEntity)
+        End Try
+        If loException.Haserror Then
+            Me.DisplayException(loException)
+        End If
+        
     End Sub
 #End Region
 
@@ -571,7 +594,7 @@ Public Class SC_Conductor
             RaiseEvent SC_ServiceDelete(loCurrentEntity)
 
             _BindingSource.Clear()
-            CT_NotifyALL("remove")
+            SC_NotifyALL("remove")
 
             If _ParentBindingSource IsNot Nothing Then
                 Dim loParentCurr As Object = Nothing
@@ -609,13 +632,13 @@ Public Class SC_Conductor
 
             End If
 
-            'clone Current data untuk dikirim ke CT_Display
+            'clone Current data untuk dikirim ke SC_Display
             loTemporaryEntity = CloneCurrentData()
-            RaiseEvent SC_Display(loTemporaryEntity, CT_mode)
+            RaiseEvent SC_Display(loTemporaryEntity, SC_mode)
         Catch ex As Exception
             loException.Add(ex)
             SetCurrentData(_OldEntity)
-            CT_NotifyALL(lcOldStatus)
+            SC_NotifyALL(lcOldStatus)
         End Try
         If loException.Haserror Then
             Me.DisplayException(loException)
@@ -638,25 +661,25 @@ Public Class SC_Conductor
             'OldStatus kalau ada error
             lcOldStatus = _ProcessStatus
             'Old Mode untuk refresh parent
-            leOldMode = CT_mode
+            leOldMode = SC_mode
 
             _BindingSource.EndEdit()
 
             'Clone CurrentData untuk proses validation
             loTemporaryEntity = CloneCurrentData()
 
-            RaiseEvent SC_Validation(loTemporaryEntity, CT_mode)
+            RaiseEvent SC_Validation(loTemporaryEntity, SC_mode)
 
             'Clone CurrentData untuk proses CT_Saving
             loCurrentEntity = CloneCurrentData()
 
-            RaiseEvent SC_Saving(loCurrentEntity, CT_mode)
+            RaiseEvent SC_Saving(loCurrentEntity, SC_mode)
 
             'Clone Hasil CT_Saving untuk proses Service Save
             loTemporaryEntity = CloneObject(loCurrentEntity)
 
             loCurrentEntity = Nothing
-            RaiseEvent SC_ServiceSave(loTemporaryEntity, CT_mode, loCurrentEntity)
+            RaiseEvent SC_ServiceSave(loTemporaryEntity, SC_mode, loCurrentEntity)
 
             If loCurrentEntity Is Nothing Then
                 loException.Add("001", "Data Not Found")
@@ -666,7 +689,7 @@ Public Class SC_Conductor
 
             SetCurrentData(loCurrentEntity)
 
-            CT_NotifyALL("save")
+            SC_NotifyALL("save")
 
             If _ParentBindingSource IsNot Nothing Then
                 Dim loParentList As System.ComponentModel.IBindingList
@@ -749,11 +772,11 @@ Public Class SC_Conductor
 
             'clone Current data untuk dikirim ke CT_Display
             loTemporaryEntity = CloneCurrentData()
-            RaiseEvent SC_Display(loTemporaryEntity, CT_mode)
+            RaiseEvent SC_Display(loTemporaryEntity, SC_mode)
             RaiseEvent SC_AfterSave(loTemporaryEntity, leOldMode)
         Catch ex As Exception
             loException.Add(ex)
-            CT_NotifyALL(lcOldStatus)
+            SC_NotifyALL(lcOldStatus)
         End Try
         If loException.Haserror Then
             Me.DisplayException(loException)
