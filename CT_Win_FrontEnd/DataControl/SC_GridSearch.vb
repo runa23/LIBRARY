@@ -19,16 +19,38 @@ Public Class SC_GridSearch
 #End Region
 
     Private Sub btnSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSearch.Click
+        Search()
+    End Sub
+
+    Private Sub txtSearch_KeyDown(sender As Object, e As KeyEventArgs) Handles txtSearch.KeyDown
+        If SC_BindingSource Is Nothing Then
+            MsgBox("property SC_BindingSource at " + Me.Name + " cannot empty")
+            Exit Sub
+        End If
+        Select Case e.KeyCode
+            Case Keys.Return
+                Search()
+            Case Keys.Up
+                SC_BindingSource.MovePrevious()
+            Case Keys.Down
+                SC_BindingSource.MoveNext()
+        End Select
+    End Sub
+
+    Private Sub Search()
         Dim loList As System.ComponentModel.IBindingList
         Dim loPropInfos As System.ComponentModel.PropertyDescriptorCollection
         Dim lcSort As String
         Dim lcValue As String
         Dim loValue As Object
         Dim loType As Type = Nothing
-        Dim lnPos As Integer
+
+        If String.IsNullOrEmpty(txtSearch.Text.Trim) Then
+            _BindingSource.RemoveFilter()
+        End If
 
         If SC_BindingSource Is Nothing Then
-            MsgBox("property CT_BindingSource at " + Me.Name + " cannot empty")
+            MsgBox("property CT_BindingSource at " + Me.Name + " cannot empty ")
             Return
         End If
 
@@ -62,14 +84,7 @@ Public Class SC_GridSearch
             Return
         End If
 
-        'Find
-        lnPos = -1
-        lnPos = _BindingSource.Find(lcSort, loValue)
-        If lnPos <> -1 Then
-            _BindingSource.Position = lnPos
-        Else
-            MsgBox("Proses pencarian tidak menemukan data yang sesuai")
-        End If
-
+        _BindingSource.RemoveFilter()
+        _BindingSource.Filter = lcSort.ToString + "=._.='" + lcValue.ToString + "'"
     End Sub
 End Class

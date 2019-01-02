@@ -19,7 +19,7 @@ Public Class SC_ExportCSV
             _DataGridView = value
         End Set
     End Property
-    <System.ComponentModel.Category("CTAgro_ExportCSV")> _
+    <System.ComponentModel.Category("SIMARC_ExportCSV")> _
     Public Property SC_DefaultFileName() As String
         Get
             Return _DefaultFileName
@@ -81,7 +81,17 @@ Public Class SC_ExportCSV
                 'get values from columns for specific row (row[i]):
                 For j As Integer = 0 To _DataGridView.Columns.Count - 1
                     If Not _DataGridView.Rows(i).IsNewRow Then
-                        array(j) = _DataGridView(j, i).Value.ToString()
+                        If _DataGridView(j, i).Value Is Nothing Then
+                            array(j) = ""
+                        Else
+                            If TypeOf (_DataGridView(j, i).Value) Is String Then
+                                array(j) = """" + _DataGridView(j, i).Value.ToString() + """"
+                            Else
+                                array(j) = _DataGridView(j, i).Value.ToString()
+                            End If
+
+                        End If
+
                     End If
                 Next
                 If Not _DataGridView.Rows(i).IsNewRow Then
